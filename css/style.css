@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', sans-serif;
+}
+
+input,
+button {
+    font-size: 16px;
+}
+
+.head_bar {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #3c4c9e;
+    color: white;
+}
+
+main{
+  
+    margin-top: 10vh;
+    margin-bottom: 40vh;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+}
+
+section {
+    width: 45vw;
+    border-radius: 20px;
+    background-color: #3c4c9e;
+}
+
+.list{
+    color: rgb(252, 238, 238);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.content {
+    margin: 20px;
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.judul_buku h2 {
+    text-align: center;
+    color: rgb(252, 238, 238);
+}
+
+.input_section .content form .input {
+    margin: 10px 0;
+}
+
+.input_section .content form button {
+    background-color: #e7e4ec;
+    color: rgb(32, 29, 29);
+    border: 0;
+    border-radius: 20px;
+    float: right;
+    display: block;
+    width: 30%;
+    padding: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.input_section .content form .input input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 15px;
+    margin-top: 10px;
+    border: #ebe6f2;
+    background-color: #f7f7fa;
+}
+
+.input_section .content form .input label {
+    color: white;
+    font-weight: bold;
+}
+
+.input_section .content form .input_inline {
+    margin: 12px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.input_section .content form .input_inline label {
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.search_section form {
+    display: grid;
+    grid-template-columns: auto 0.2fr 0fr;
+    grid-gap: 10px;
+}
+
+.search_section form label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section p {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+
+.search_section form input {
+    padding: 8px;
+    background-color: #f5f7fa;
+    border: #E5CFF7;
+    border-radius: 20px;
+}
+
+.search_section form button {
+    background-color: #f7f2fc;
+    font-weight: bold;
+    color: rgb(35, 32, 32);
+    border: #E5CFF7;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background-color: #3c4c9e;
+    padding: 20px;
+    color: white;
+}
+
+footer a {
+    color: rgb(237, 231, 231);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .head_bar {
+        padding: 20px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    .input_section .form button {
+        width: 50%;
+    }
+
+    .search_section form {
+        grid-template-columns: auto 1fr;
+    }
+
+    .search_section p {
+        margin-top: 20px;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .head_bar {
+        padding: 25px;
+    }
+
+    main {
+        padding: 25px;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    .search_section form input {
+        width: 100%;
+    }
+
+    .search_section form button {
+        width: 20vw;
+    }
+}
